@@ -54,6 +54,12 @@
           margin-top: 10px;
         }
       }
+      .filter-btn {
+        @media (max-width: 700px) {
+          padding: 10px;
+          text-align: center;
+        }
+      }
     }
   }
   .table-container {

@@ -28,7 +28,7 @@ function TableStatus() {
             Download
           </p>
           <select
-            className="btn-item"
+            className="btn-item filter-btn"
             onChange={handleStatusChange}
             value={filterStatus}
           >
