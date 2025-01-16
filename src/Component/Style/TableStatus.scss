@@ -34,7 +34,6 @@
       text-align: center;
       .btn-item {
         display: inline-block;
-        padding: 10px 15px;
         font-size: 15px;
         font-weight: 500;
         cursor: pointer;
@@ -53,6 +52,9 @@
           text-align: center;
           margin-top: 10px;
         }
+      }
+      .btn-download {
+        padding: 10px 15px;
       }
     }
   }

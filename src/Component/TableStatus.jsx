@@ -24,7 +24,7 @@ function TableStatus() {
           <p className="title-btn issued-btn">Issued Cards</p>
         </div>
         <div className="main-btn-container">
-          <p className="btn-item" onClick={handleDownload}>
+          <p className="btn-item btn-download" onClick={handleDownload}>
             Download
           </p>
           <select
