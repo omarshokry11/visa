@@ -8,8 +8,18 @@ function App() {
   return (
     <>
       <div className="main-btn">
-        <button onClick={() => setChecked("visa")}>Page 1</button>
-        <button onClick={() => setChecked("status")}>Page 2</button>
+        <button
+          className={checked === "visa" ? "active" : ""}
+          onClick={() => setChecked("visa")}
+        >
+          Visa
+        </button>
+        <button
+          className={checked === "status" ? "active" : ""}
+          onClick={() => setChecked("status")}
+        >
+          Issued Cards
+        </button>
       </div>
       {checked === "visa" && <VisaComponent />}
       {checked === "status" && <TableStatus />}

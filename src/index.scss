@@ -9,7 +9,7 @@
   text-align: center;
   button {
     padding: 15px 0;
-    width: 30%;
+    width: 25%;
     font-size: 15px;
     font-weight: 600;
     margin: 0 10px;
@@ -21,12 +21,16 @@
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #282828;
-    color: #fff;
+    background: none;
+    color: #808080;
     @media (max-width: 700px) {
       font-size: 11px;
       width: 40%;
     }
+  }
+  .active {
+    color: #000000;
+    background-color: #e7e7e7;
   }
 }
 
