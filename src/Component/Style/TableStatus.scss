@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: 700px) {
+    @media (max-width: 767px) {
       display: block;
     }
     .title-btn {
