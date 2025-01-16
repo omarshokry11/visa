@@ -1,0 +1,101 @@
+.table-status-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 25px 0;
+  overflow: auto;
+  @media (max-width: 884px) {
+    width: 95%;
+  }
+  .table-header {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 700px) {
+      display: block;
+    }
+    .title-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      font-size: 15px;
+      font-weight: 600;
+      @media (max-width: 700px) {
+        width: 50%;
+      }
+    }
+    .transactions-btn {
+      color: #bdbdbd;
+      border-left: 2px solid #d0d0d0;
+    }
+    .issued-btn {
+      border-right: 2px solid #d0d0d0;
+    }
+    .main-btn-container {
+      text-align: center;
+      .btn-item {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        border: 1px solid #dbdbdb;
+        margin-left: 10px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        outline: none;
+        text-align: center;
+        padding: 10px 0;
+        @media (max-width: 700px) {
+          width: 40%;
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .table-container {
+    width: 100%;
+    @media (max-width: 884px) {
+      text-align: center;
+    }
+    @media (max-width: 700px) {
+      width: 500px;
+      text-align: center;
+    }
+    th {
+      color: #797979;
+      font-weight: normal;
+      font-size: 17px;
+    }
+    td {
+      font-size: 15px;
+    }
+  }
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #5c5c5c;
+    .buttons-container {
+      button {
+        margin-left: 5px;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: 1px solid #dbdbdb;
+        background: none;
+        cursor: pointer;
+        color: #282828;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+      }
+    }
+  }
+}

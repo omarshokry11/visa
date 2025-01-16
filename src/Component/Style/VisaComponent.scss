@@ -1,0 +1,168 @@
+.main-visa-component-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
+  @media (max-width: 884px) {
+    width: 85%;
+  }
+  .visa-header {
+    border: 2px solid #282828;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    .visa-name-title {
+      display: flex;
+      align-items: center;
+      flex: 0.95;
+      .visa-icon {
+        font-size: 25px;
+      }
+      .select-user {
+        font-size: 15px;
+        font-weight: normal;
+        border: none;
+        outline: none;
+        width: 100%;
+        cursor: pointer;
+        display: inline-block;
+        height: 100%;
+        padding: 0 10px;
+        option {
+          font-size: 17px;
+          @media (max-width: 700px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .arrow-icon {
+      flex: 0.05;
+      .arrow {
+        display: block;
+        font-size: 13px;
+      }
+    }
+  }
+  .visa-body {
+    margin: 15px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 2px solid #282828;
+    padding: 25px;
+    @media (max-width: 375px) {
+      padding: 10px 15px;
+    }
+    .visa-icon-item {
+      direction: rtl;
+      .visa-icon-body {
+        font-size: 70px;
+        @media (max-width: 884px) {
+          font-size: 50px;
+        }
+        @media (max-width: 700px) {
+          font-size: 40px;
+        }
+      }
+    }
+    .visa-body-title-number {
+      font-size: 20px;
+      margin: 40px 0;
+    }
+    .body-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .details-title {
+        font-weight: normal;
+        font-size: 15px;
+        margin-bottom: 5px;
+        color: rgb(111, 111, 111);
+        @media (max-width: 375px) {
+          font-size: 13px;
+        }
+      }
+      .details-desc {
+        font-size: 16px;
+        font-weight: 500;
+        color: #282828;
+        @media (max-width: 375px) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .visa-details-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    .details-item {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin-bottom: 15px;
+      .details-item-title {
+        font-weight: normal;
+        font-size: 15px;
+        margin-bottom: 5px;
+        color: rgb(111, 111, 111);
+        @media (max-width: 375px) {
+          font-size: 13px;
+        }
+      }
+      .details-item-desc {
+        font-size: 16px;
+        font-weight: 500;
+        color: #282828;
+        @media (max-width: 375px) {
+          font-size: 13px;
+        }
+        span {
+          display: block;
+          margin-bottom: 5px;
+        }
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+      }
+      .active {
+        border: 1px solid #282828;
+        width: fit-content;
+        display: block;
+        padding: 5px;
+        font-size: 13px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+    }
+  }
+  .main-btn-container {
+    .btn-item {
+      display: block;
+      width: 100%;
+      padding: 10px 0;
+      background: none;
+      border: 1px solid #282828;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      font-size: 16px;
+      font-weight: 500;
+      &:nth-child(2) {
+        margin: 15px 0;
+      }
+    }
+  }
+}
