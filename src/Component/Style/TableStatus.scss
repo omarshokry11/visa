@@ -83,7 +83,8 @@
   .pagination {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 10px;
     font-size: 14px;
     color: #5c5c5c;
     .buttons-container {
@@ -101,6 +102,10 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        @media (max-width: 700px) {
+          padding: 7px 10px;
+          font-size: 12px;
+        }
       }
     }
   }
