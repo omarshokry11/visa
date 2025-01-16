@@ -1,17 +1,11 @@
-import { useState } from "react";
 import { FaCcVisa } from "react-icons/fa";
 import { RiVisaLine } from "react-icons/ri";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-import users from "../JSON/users.json";
+import VisaHook from "../Hook/visa-hook";
 import "./Style/VisaComponent.scss";
 
 function VisaComponent() {
-  const [selectedUser, setSelectedUser] = useState(users[0]);
-  const handleSelectChange = (e) => {
-    const userId = parseInt(e.target.value, 10);
-    const user = users.find((u) => u.id === userId);
-    setSelectedUser(user);
-  };
+  const [users, selectedUser, handleSelectChange] = VisaHook();
 
   return (
     <div className="main-visa-component-container">
