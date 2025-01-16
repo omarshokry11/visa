@@ -13,6 +13,8 @@
     justify-content: space-between;
     @media (max-width: 767px) {
       display: block;
+      width: 100%;
+      overflow: hidden;
     }
     .title-btn {
       display: inline-block;
@@ -21,6 +23,8 @@
       font-weight: 600;
       @media (max-width: 700px) {
         width: 50%;
+        font-size: 12px;
+        text-align: center;
       }
     }
     .transactions-btn {
@@ -52,6 +56,7 @@
           width: 40%;
           text-align: center;
           margin-top: 10px;
+          font-size: 12px;
         }
       }
       .filter-btn {
@@ -63,21 +68,21 @@
     }
   }
   .table-container {
-    width: 100%;
-    @media (max-width: 884px) {
-      text-align: center;
-    }
-    @media (max-width: 700px) {
-      width: 500px;
-      text-align: center;
-    }
     th {
       color: #797979;
       font-weight: normal;
       font-size: 17px;
+      @media (max-width: 700px) {
+        font-size: 12px;
+        text-align: center;
+      }
     }
     td {
       font-size: 15px;
+      @media (max-width: 700px) {
+        font-size: 10px;
+        text-align: center;
+      }
     }
   }
   .pagination {
@@ -87,6 +92,9 @@
     margin-top: 10px;
     font-size: 14px;
     color: #5c5c5c;
+    @media (max-width: 700px) {
+      font-size: 12px;
+    }
     .buttons-container {
       button {
         margin-left: 5px;
